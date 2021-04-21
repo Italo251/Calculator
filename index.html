@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+</head>
+<body>
+    <div class="calculator">
+        <h1>Calculator</h1>
+       
+        <div class="insideC">
+            <table>
+                <tr>
+                    <td><button class="allButtons" onclick="clearAll()">C</button></td>
+                    <td><button class="allButtons" onclick="back()"><</button></td>
+                    <td><button class="allButtons" onclick="inside('/')">/</button></td>
+                    <td><button class="allButtons" onclick="inside('*')">*</button></td>
+                </tr>
+                <tr>
+                    <td><button class="allButtons" onclick="inside('7')">7</button></td>
+                    <td><button class="allButtons" onclick="inside('8')">8</button></td>
+                    <td><button class="allButtons" onclick="inside('9')">9</button></td>
+                    <td><button class="allButtons" onclick="inside('-')">-</button></td>
+                </tr>
+                <tr>
+                    <td><button class="allButtons" onclick="inside('4')">4</button></td>
+                    <td><button class="allButtons" onclick="inside('5')">5</button></td>
+                    <td><button class="allButtons" onclick="inside('6')">6</button></td>
+                    <td><button class="allButtons" onclick="inside('+')">+</button></td>
+                </tr>
+                <tr>
+                    <td><button class="allButtons" onclick="inside('1')">1</button></td>
+                    <td><button class="allButtons" onclick="inside('2')">2</button></td>
+                    <td><button class="allButtons" onclick="inside('3')">3</button></td>
+                    <td rowspan="2"><button class="allButtons" style="height: 112px;" onclick="calculator()">=</button></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button class="allButtons" style="width: 112px;" onclick="inside(0)">0</button></td>
+                    <td><button class="allButtons" onclick="inside('.')">.</button></td>
+                </tr>
+            </table>
+            <p class="visor" id="visor"></p>
+        </div>
+    </div>
+</body>
+</html>

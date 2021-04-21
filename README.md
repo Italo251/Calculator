@@ -4,4 +4,4 @@ https://user-images.githubusercontent.com/74571243/115562021-79f2ab80-a28c-11eb-
 
 Calculator made with HTML, CSS and JavaScript to pratice.
 
-Run: index.htlm file.
+Run: index.html file.
